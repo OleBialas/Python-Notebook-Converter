@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+notebook-converter= "cli:main"
+
+[project]
+name = "notebook-converter"
+version = "1.0.0"
+authors = [
+  { name="Ole Bialas", email="ole.bialas@posteo.de" },
+]
+description = "A CLI tool for using Jupytext recursively"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = ["jupytext"]

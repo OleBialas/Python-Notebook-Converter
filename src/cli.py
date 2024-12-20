@@ -5,7 +5,7 @@ from convert import convert_notebooks_in_directory
 def main():
 
     parser = argparse.ArgumentParser(
-        description="Convert Jupyter notebooks to Python scripts (recursively"
+        description="Convert Jupyter notebooks to Python scripts recursively"
     )
     parser.add_argument("root", help="Root directory containing notebooks", default=".")
     parser.add_argument(
